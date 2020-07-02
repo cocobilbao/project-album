@@ -29,29 +29,28 @@ export default class album extends Component {
 
   render() {
     const { pageNumber, numPages, show } = this.state;
-console.log("show", show)
     return (
       <div>
         <div className="div-group">
           <div className={pageNumber === 1 ? "img-div active" : "img-div"}>
-            <img 
-            alt="album"
+            <img
+              alt="album"
               className="img-page"
               style={pageNumber === 1 ? { opacity: "1" } : { opacity: "0" }}
               src={foto1}
             ></img>
           </div>
           <div className={pageNumber === 2 ? "img-div active" : "img-div"}>
-            <img 
-            alt="album"
+            <img
+              alt="album"
               className="img-page"
               style={pageNumber === 2 ? { opacity: "1" } : { opacity: "0" }}
               src={foto2}
             ></img>
           </div>
           <div className={pageNumber === 3 ? "img-div active" : "img-div"}>
-            <img 
-            alt="album"
+            <img
+              alt="album"
               className="img-page"
               style={pageNumber === 3 ? { opacity: "1" } : { opacity: "0" }}
               src={foto3}
@@ -59,8 +58,8 @@ console.log("show", show)
           </div>
 
           <div className={pageNumber === 4 ? "img-div active" : "img-div"}>
-            <img 
-            alt="album"
+            <img
+              alt="album"
               className="img-page"
               style={pageNumber === 4 ? { opacity: "1" } : { opacity: "0" }}
               src={foto4}
@@ -69,8 +68,8 @@ console.log("show", show)
           <div
             className={pageNumber === numPages ? "img-div active" : "img-div"}
           >
-            <img 
-            alt="album"
+            <img
+              alt="album"
               className="img-page"
               style={
                 pageNumber === numPages ? { opacity: "1" } : { opacity: "0" }
@@ -90,8 +89,7 @@ console.log("show", show)
               onMouseLeave={this.showIndexOut}
               onClick={this.goToPrevPage}
             >
-              <img 
-              alt="album" src={arrow2} />
+              <img alt="album" src={arrow2} />
             </button>
           )}
         </div>
@@ -105,12 +103,14 @@ console.log("show", show)
               onMouseLeave={this.showIndexOut}
               onClick={this.goToNextPage}
             >
-              <img 
-              alt="album" src={arrow1} />
+              <img alt="album" src={arrow1} />
             </button>
           )}
         </div>
-        <div className="index-div" style={show === true ? {opacity: "1"} : {opacity: "0"}}>
+        <div
+          className="index-div"
+          style={show === true ? { opacity: "1" } : { opacity: "0" }}
+        >
           <h2>
             {pageNumber} / {numPages}
           </h2>
