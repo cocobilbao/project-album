@@ -34,21 +34,24 @@ console.log("show", show)
       <div>
         <div className="div-group">
           <div className={pageNumber === 1 ? "img-div active" : "img-div"}>
-            <img
+            <img 
+            alt="album"
               className="img-page"
               style={pageNumber === 1 ? { opacity: "1" } : { opacity: "0" }}
               src={foto1}
             ></img>
           </div>
           <div className={pageNumber === 2 ? "img-div active" : "img-div"}>
-            <img
+            <img 
+            alt="album"
               className="img-page"
               style={pageNumber === 2 ? { opacity: "1" } : { opacity: "0" }}
               src={foto2}
             ></img>
           </div>
           <div className={pageNumber === 3 ? "img-div active" : "img-div"}>
-            <img
+            <img 
+            alt="album"
               className="img-page"
               style={pageNumber === 3 ? { opacity: "1" } : { opacity: "0" }}
               src={foto3}
@@ -56,7 +59,8 @@ console.log("show", show)
           </div>
 
           <div className={pageNumber === 4 ? "img-div active" : "img-div"}>
-            <img
+            <img 
+            alt="album"
               className="img-page"
               style={pageNumber === 4 ? { opacity: "1" } : { opacity: "0" }}
               src={foto4}
@@ -65,7 +69,8 @@ console.log("show", show)
           <div
             className={pageNumber === numPages ? "img-div active" : "img-div"}
           >
-            <img
+            <img 
+            alt="album"
               className="img-page"
               style={
                 pageNumber === numPages ? { opacity: "1" } : { opacity: "0" }
@@ -85,7 +90,8 @@ console.log("show", show)
               onMouseLeave={this.showIndexOut}
               onClick={this.goToPrevPage}
             >
-              <img src={arrow2} />
+              <img 
+              alt="album" src={arrow2} />
             </button>
           )}
         </div>
@@ -99,7 +105,8 @@ console.log("show", show)
               onMouseLeave={this.showIndexOut}
               onClick={this.goToNextPage}
             >
-              <img src={arrow1} />
+              <img 
+              alt="album" src={arrow1} />
             </button>
           )}
         </div>
