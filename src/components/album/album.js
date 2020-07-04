@@ -1,19 +1,10 @@
 import React, { Component } from "react";
-import album1 from "./img/album1.png";
-import foto1 from "./img/foto1.png";
-import foto2 from "./img/foto2.png";
-import foto3 from "./img/foto3.png";
-import foto4 from "./img/foto4.png";
-import foto5 from "./img/foto5.png";
-import album2 from "./img/album2.png";
-import arrow1 from "./img/arrow1.png";
-import arrow2 from "./img/arrow2.png";
 import "./album.css";
 
 export default class album extends Component {
   constructor(props) {
     super(props);
-    this.state = { numPages: 7, pageNumber: 1 };
+    this.state = { numPages: 9, pageNumber: 1 };
   }
 
   onDocumentLoadSuccess = ({ numPages }) => {
@@ -35,21 +26,24 @@ export default class album extends Component {
             <img
               alt="album"
               className="img-page"
-              src={album1}
+              style={{borderRadius:"4px"}}
+              src={"/img/album1.png"}
             ></img>
           </div>
           <div className={pageNumber === 2 ? "img-div active" : "img-div"}>
             <img
               alt="album"
               className="img-page"
-              src={foto1}
+              style={{border:"5px solid #fff"}}
+              src={"/img/foto6.png"}
             ></img>
           </div>
           <div className={pageNumber === 3 ? "img-div active" : "img-div"}>
             <img
               alt="album"
               className="img-page"
-              src={foto2}
+              style={{border:"5px solid #fff"}}
+              src={"/img/foto1.png"}
             ></img>
           </div>
 
@@ -57,21 +51,40 @@ export default class album extends Component {
             <img
               alt="album"
               className="img-page"
-              src={foto3}
+              style={{border:"5px solid #fff"}}
+              src={"/img/foto2.png"}
             ></img>
           </div>
           <div className={pageNumber === 5 ? "img-div active" : "img-div"}>
             <img
               alt="album"
               className="img-page"
-              src={foto4}
+              style={{border:"5px solid #fff"}}
+              src={"/img/foto3.png"}
             ></img>
           </div>
           <div className={pageNumber === 6 ? "img-div active" : "img-div"}>
             <img
               alt="album"
               className="img-page"
-              src={foto5}
+              style={{border:"5px solid #fff"}}
+              src={"/img/foto4.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 7 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              style={{border:"5px solid #fff"}}
+              src={"/img/foto5.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 8 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              style={{border:"5px solid #fff"}}
+              src={"/img/foto7.png"}
             ></img>
           </div>
           <div
@@ -80,7 +93,8 @@ export default class album extends Component {
             <img
               alt="album"
               className="img-page"
-              src={album2}
+              style={{borderRadius:"4px"}}
+              src={"/img/album2.png"}
             ></img>
           </div>
         </div>
@@ -93,7 +107,7 @@ export default class album extends Component {
               className="btn-album-left"
               onClick={this.goToPrevPage}
             >
-              <img alt="album" src={arrow1} />
+              <img alt="album" src={"/img/arrow1.png"} />
             </button>
           )}
 
@@ -104,16 +118,16 @@ export default class album extends Component {
               className="btn-album-right"
               onClick={this.goToNextPage}
             >
-              <img alt="album" src={arrow2} />
+              <img alt="album" src={"/img/arrow2.png"} />
             </button>
           )}
 
           <div
             className="index-div"
           >
-            <h2>
+            <h3>
               {pageNumber} / {numPages}
-            </h2>
+            </h3>
           </div>
         </div>
       </div>
