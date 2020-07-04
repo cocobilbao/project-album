@@ -57,7 +57,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 5px 20px;
-  opacity: 1;
+  opacity: 0;
 }
 
 .index-div h3 {
@@ -80,8 +80,6 @@ body {
   max-width: 1500px;
   width: 90vw;
   margin: 0 auto;
-  /* transition: all 0.3s ease;
-  opacity: 0; */
 }
 
 .img-page {
