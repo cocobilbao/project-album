@@ -99,6 +99,29 @@ body {
   .index-div {
     top: calc(53vh - 0px);
     bottom: 0;
+    left: 40%;
+  }
+}
+
+@media (max-width: 400px) {
+  .img-div {
+    top: 30%;
+  }
+  .btn-album-left {
+    transform: scale(0.5);
+  }
+  .btn-album-right {
+    transform: scale(0.5);
+  }
+  .index-div h2 {
+    font-size: 80px;
+  }
+  .index-div span {
+    font-size: 40px;
+  }
+  .index-div {
+    top: calc(53vh - 0px);
+    bottom: 0;
     left: 35%;
   }
 }
