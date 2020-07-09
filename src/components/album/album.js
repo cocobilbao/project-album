@@ -4,7 +4,7 @@ import "./album.css";
 export default class album extends Component {
   constructor(props) {
     super(props);
-    this.state = { numPages: 21, pageNumber: 1 };
+    this.state = { numPages: 21, pageNumber: 2 };
   }
 
   onDocumentLoadSuccess = ({ numPages }) => {
@@ -22,7 +22,7 @@ export default class album extends Component {
     return (
       <div>
         <div className="div-group">
-          <div className={pageNumber === 1 ? "img-div active" : "img-div"}>
+          <div className={pageNumber === 1 ? "img-div-book active" : "img-div-book"}>
             <img
               alt="album"
               className="img-page-book"
@@ -164,7 +164,7 @@ export default class album extends Component {
             ></img>
           </div>
           <div
-            className={pageNumber === numPages ? "img-div active" : "img-div"}
+            className={pageNumber === numPages ? "img-div-book active" : "img-div-book"}
           >
             <img
               alt="album"
@@ -174,37 +174,34 @@ export default class album extends Component {
           </div>
         </div>
 
-        <div className="btn-group">
+        <div>
           {pageNumber === 1 ? (
             ""
           ) : (
-            <button
-              className="btn-album-left"
-              onClick={this.goToPrevPage}
-            >
-              <img alt="album" src={"/img/arrow1.png"} />
-            </button>
+            <div className="btn-album-left" onClick={this.goToPrevPage}>
+              <img alt="album" src={"/img/flecha_izq.png"} />
+            </div>
           )}
 
           {pageNumber === numPages ? (
             ""
           ) : (
-            <button
-              className="btn-album-right"
-              onClick={this.goToNextPage}
-            >
-              <img alt="album" src={"/img/arrow2.png"} />
+            <button className="btn-album-right" onClick={this.goToNextPage}>
+              <img alt="album" src={"/img/flecha_der.png"} />
             </button>
           )}
+       
 
-          <div
-            className="index-div"
-          >
-            <h4>
-              {pageNumber} / {numPages}
-            </h4>
-          </div>
-        </div>
+          {pageNumber === 1 || pageNumber === 21 ? (
+            ""
+          ) : (
+            <div className="index-div">
+              <h2>
+                {pageNumber - 1} <span>de</span> {numPages - 2}
+              </h2>
+            </div>
+          )}
+       </div>
       </div>
     );
   }
