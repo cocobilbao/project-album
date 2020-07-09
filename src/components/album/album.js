@@ -4,7 +4,7 @@ import "./album.css";
 export default class album extends Component {
   constructor(props) {
     super(props);
-    this.state = { numPages: 21, pageNumber: 2 };
+    this.state = { numPages: 21, pageNumber: 1 };
   }
 
   onDocumentLoadSuccess = ({ numPages }) => {
