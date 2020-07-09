@@ -4,7 +4,7 @@ import "./album.css";
 export default class album extends Component {
   constructor(props) {
     super(props);
-    this.state = { numPages: 9, pageNumber: 1 };
+    this.state = { numPages: 21, pageNumber: 1 };
   }
 
   onDocumentLoadSuccess = ({ numPages }) => {
@@ -25,25 +25,22 @@ export default class album extends Component {
           <div className={pageNumber === 1 ? "img-div active" : "img-div"}>
             <img
               alt="album"
-              className="img-page"
-              style={{borderRadius:"4px"}}
-              src={"/img/album1.png"}
+              className="img-page-book"
+              src={"/img/LasChicasdelCable_Album_interactivo-1.png"}
             ></img>
           </div>
           <div className={pageNumber === 2 ? "img-div active" : "img-div"}>
             <img
               alt="album"
               className="img-page"
-              style={{border:"5px solid #fff"}}
-              src={"/img/foto6.png"}
+              src={"/img/LasChicasdelCable_Album_interactivo-2-2.png"}
             ></img>
           </div>
           <div className={pageNumber === 3 ? "img-div active" : "img-div"}>
             <img
               alt="album"
               className="img-page"
-              style={{border:"5px solid #fff"}}
-              src={"/img/foto1.png"}
+              src={"/img/LasChicasdelCable_Album_interactivo-2-3.png"}
             ></img>
           </div>
 
@@ -51,40 +48,119 @@ export default class album extends Component {
             <img
               alt="album"
               className="img-page"
-              style={{border:"5px solid #fff"}}
-              src={"/img/foto2.png"}
+              src={"/img/LasChicasdelCable_Album_interactivo-2-4.png"}
             ></img>
           </div>
           <div className={pageNumber === 5 ? "img-div active" : "img-div"}>
             <img
               alt="album"
               className="img-page"
-              style={{border:"5px solid #fff"}}
-              src={"/img/foto3.png"}
+              src={"/img/LasChicasdelCable_Album_interactivo-2-5.png"}
             ></img>
           </div>
           <div className={pageNumber === 6 ? "img-div active" : "img-div"}>
             <img
               alt="album"
               className="img-page"
-              style={{border:"5px solid #fff"}}
-              src={"/img/foto4.png"}
+              src={"/img/LasChicasdelCable_Album_interactivo-2-6.png"}
             ></img>
           </div>
           <div className={pageNumber === 7 ? "img-div active" : "img-div"}>
             <img
               alt="album"
               className="img-page"
-              style={{border:"5px solid #fff"}}
-              src={"/img/foto5.png"}
+              src={"/img/LasChicasdelCable_Album_interactivo-2-7.png"}
             ></img>
           </div>
           <div className={pageNumber === 8 ? "img-div active" : "img-div"}>
             <img
               alt="album"
               className="img-page"
-              style={{border:"5px solid #fff"}}
-              src={"/img/foto7.png"}
+              src={"/img/LasChicasdelCable_Album_interactivo-2-8.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 9 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-9.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 10 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-10.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 11 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-11.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 12 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-12.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 13 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-13.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 14 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-14.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 15 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-15.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 16 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-16.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 17 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-17.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 18 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-18.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 19 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-19.png"}
+            ></img>
+          </div>
+          <div className={pageNumber === 20 ? "img-div active" : "img-div"}>
+            <img
+              alt="album"
+              className="img-page"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-20.png"}
             ></img>
           </div>
           <div
@@ -92,9 +168,8 @@ export default class album extends Component {
           >
             <img
               alt="album"
-              className="img-page"
-              style={{borderRadius:"4px"}}
-              src={"/img/album2.png"}
+              className="img-page-book"
+              src={"/img/LasChicasdelCable_Album_interactivo-2-21.png"}
             ></img>
           </div>
         </div>
@@ -125,9 +200,9 @@ export default class album extends Component {
           <div
             className="index-div"
           >
-            <h3>
+            <h4>
               {pageNumber} / {numPages}
-            </h3>
+            </h4>
           </div>
         </div>
       </div>
