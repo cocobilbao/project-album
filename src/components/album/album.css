@@ -10,7 +10,7 @@ body {
   border: none;
   outline-style: none;
   position: fixed;
-  top: calc(57vh - 0px);
+  top: calc(77vh - 0px);
   right: 0;
   padding: 0;
   z-index: 2;
@@ -26,7 +26,7 @@ body {
   border: none;
   outline-style: none;
   position: fixed;
-  top: calc(57vh - 0px);
+  top: calc(77vh - 0px);
   left: 0;
   padding: 0;
   z-index: 2;
@@ -74,7 +74,7 @@ body {
   top: 40%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
-  max-width: 1600px;
+  max-width: 1500px;
   width: 90vw;
   margin: 0 auto;
 }
@@ -86,9 +86,11 @@ body {
   }
   .btn-album-left {
     transform: scale(0.5);
+    top: calc(57vh - 0px);
   }
   .btn-album-right {
     transform: scale(0.5);
+    top: calc(57vh - 0px);
   }
   .index-div h2 {
     font-size: 80px;
